@@ -75,6 +75,10 @@ section.result {
 .cont-result {
     width: 75%;
     height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .t-cresult {
@@ -254,4 +258,23 @@ section.summary {
     background-color: var(--button-primary);
     border: none;
     color: var(--white);
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+    .contain-all {
+        flex-direction: column;
+    }
+
+    /* result */
+
+    section.result {
+        width: 100%;
+    }
+
+
+
+    /* summary */
+    section.summary {
+        width: 100%;
+    }
 }
