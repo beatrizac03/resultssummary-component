@@ -16,7 +16,7 @@ body {
 
 :root {
     --white: #fff;
-    --your-result: #AC9BF7;
+    --your-result: #c5baf7;
     --light-purple: #6340FB;
     --darker-purple: #392EEC;
     --button-primary: #303C58;
@@ -28,10 +28,12 @@ body {
     --verbal-div: #F2FBFA;
     --visual-text: #3344DC;
     --visual-div: #F3F3FF;
+    --gradient-1-shape: #4924CD;
+    --gradient-2-shape: #4633ED;
 
     --base-size: 1.2rem;
     --scale: 1.25;
-    --xxl: calc(var(--xxl) * var(--scale));
+    --xxl: calc(var(--xl) * var(--scale));
     --xl: calc(var(--large) * var(--scale));
     --large: calc(var(--medium) * var(--scale));
     --medium: calc(var(--regular) * var(--scale));
@@ -62,33 +64,112 @@ main {
 
 section.result {
     border-radius: 20px;
-    width: 45%;
+    width: 50%;
     height: 100%;
     background: linear-gradient(var(--light-purple), var(--darker-purple));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.cont-result {
+    width: 75%;
+    height: 85%;
+}
+
+.t-cresult {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t-cresult p{
+    margin: 0;
+    color: var(--your-result);
+    font-weight: 600;
+}
+
+.cont-circleshape {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.circleshape-result {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(var(--gradient-1-shape), var(--gradient-2-shape));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-circleshape {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-circleshape span:first-child {
+    color: var(--white);
+    font-size: var(--xl);
+    font-weight: bold;
+}
+
+.text-circleshape span:last-child {
+    color: var(--your-result);
+    font-size: var(--smallest);
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.sec-textresult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.sec-textresult p {
+    color: var(--white);
+    font-size: var(--regular);
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.sec-textresult span {
+    text-align: center;
+    color: var(--your-result);
+    font-size: var(--smallest);
+}
 
 
 /* section summary */
 
 section.summary {
-    width: 55%;
+    width: 50%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .cont-summary {
-    border: 1px solid purple;
     width: 90%;
     height: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
 .t-csumm {
@@ -104,10 +185,11 @@ section.summary {
 
 .c-skills-test {
     width: 100%;
-    height: 70%;
+    height: 67%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 1.5rem;
 }
 
 .eachskill-div {
