@@ -260,9 +260,14 @@ section.summary {
     color: var(--white);
 }
 
-@media (min-width: 400px) and (max-width: 800px){
+@media screen and (max-width: 500px){
+    body {
+        overflow-x: hidden;
+    }
+
     .contain-all {
         flex-direction: column;
+        width: 80%;
     }
 
     /* result */
@@ -270,6 +275,12 @@ section.summary {
     section.result {
         width: 100%;
     }
+
+    .cont-result {
+        height: auto;
+        width: auto;
+    }
+
 
 
 
