@@ -260,7 +260,7 @@ section.summary {
     color: var(--white);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
     body {
         overflow-x: hidden;
     }
@@ -286,6 +286,18 @@ section.summary {
 
     /* summary */
     section.summary {
-        width: 100%;
+        width: 100%; 
     }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .contain-all {
+        width: auto;
+        height: auto;
+    }
+
+    section.result {
+        height: auto;
+    }
+
 }
